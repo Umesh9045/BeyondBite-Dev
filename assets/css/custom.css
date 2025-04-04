@@ -201,7 +201,9 @@ body {
 .video-container {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    max-width: 600px; /* Optional: Limit max width on larger screens */
+    margin: 0 auto; /* Center horizontally */
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
   }
@@ -214,7 +216,7 @@ body {
     height: 100%;
     border: 0;
   }
-  
+
 .slider-wrapper {
     width: 90%;
     max-width: 1536px;
