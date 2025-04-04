@@ -2614,26 +2614,6 @@ input {
   }
 }
 
-/* Video Popup */
-.cs-pd_video .cs-video_open,
-.cs-sample_img .cs-video_open {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-size: 68px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  line-height: 48px;
-}
-
-.cs-pd_video .cs-video_open:hover,
-.cs-sample_img .cs-video_open:hover {
-  color: rgba(255, 255, 255, 0.7);
-}
-
 .cs-video_popup {
   position: fixed;
   z-index: 1000;
@@ -2641,15 +2621,15 @@ input {
   width: 100%;
   height: 100%;
   left: -100%;
-  -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s;
+  -webkit-transition-delay: .3s;
+  transition-delay: .3s
 }
 
 .cs-video_popup.active {
   left: 0;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
-  left: 0;
+  left: 0
 }
 
 .cs-video_popup_overlay {
@@ -2657,15 +2637,15 @@ input {
   left: 0;
   right: 0;
   background: #000;
-  -webkit-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
-  opacity: 0;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+  opacity: 0
 }
 
 .cs-video_popup.active .cs-video_popup_overlay {
-  opacity: 0.8;
+  opacity: .8;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, .5)
 }
 
 .cs-video_popup_content {
@@ -2678,27 +2658,27 @@ input {
   -webkit-overflow-scrolling: touch;
   font-size: 0;
   text-align: center;
-  -webkit-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
   -webkit-transform: translateY(100px);
   transform: translateY(100px);
   opacity: 0;
   visibility: hidden;
-  padding: 15px;
+  padding: 15px
 }
 
 .cs-video_popup.active .cs-video_popup_content {
   -webkit-transform: translateY(0);
   transform: translateY(0);
   opacity: 1;
-  visibility: visible;
+  visibility: visible
 }
 
 .cs-video_popup_content:after {
   content: "";
   display: inline-block;
   height: 100%;
-  vertical-align: middle;
+  vertical-align: middle
 }
 
 .cs-video_popup_container {
@@ -2708,11 +2688,11 @@ input {
   background: #fff;
   max-width: 1380px;
   width: 100%;
-  vertical-align: middle;
+  vertical-align: middle
 }
 
 .cs-video_popup_container .embed-responsive {
-  width: 100%;
+  width: 100%
 }
 
 .embed-responsive {
@@ -2721,13 +2701,13 @@ input {
   height: 0;
   padding: 0;
   overflow: hidden;
-  height: 100%;
+  height: 100%
 }
 
 .embed-responsive-16by9::before {
   display: block;
   content: "";
-  padding-top: 56.25%;
+  padding-top: 56.25%
 }
 
 .embed-responsive iframe,
@@ -2738,7 +2718,7 @@ input {
   left: 0;
   width: 100%;
   height: 100%;
-  border: 0;
+  border: 0
 }
 
 .cs-video_popup_close {
@@ -2749,14 +2729,14 @@ input {
   height: 40px;
   background: #d90d0d;
   cursor: pointer;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out
 }
 
 .cs-video_popup iframe {
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: absolute
 }
 
 .cs-video_popup_close:before {
@@ -2771,8 +2751,8 @@ input {
   margin-left: -10px;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out
 }
 
 .cs-video_popup_close:after {
@@ -2787,27 +2767,25 @@ input {
   margin-left: -10px;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out
 }
 
-.cs-video_popup_close:hover:before,
-.cs-video_popup_close:hover:after {
-  background: #000;
+.cs-video_popup_close:hover:after,
+.cs-video_popup_close:hover:before {
+  background: #000
 }
 
 .cs-video_popup_layer {
   position: absolute;
   left: 0;
   bottom: 0;
-  right: 0;
+  right: 0
 }
 
 .cs-video_popup_align {
-  overflow: hidden;
+  overflow: hidden
 }
-
-/*End Video Popup*/
 
 .cs-site_header {
   position: relative;
