@@ -198,7 +198,7 @@ body {
     }
 } */
 
-.video-container {
+.video-container-yt {
     position: relative;
     width: 100%;
     max-width: 600px; /* Optional: Limit max width on larger screens */
@@ -208,7 +208,7 @@ body {
     overflow: hidden;
   }
 
-  .video-container iframe {
+  .video-container-yt iframe {
     position: absolute;
     top: 0;
     left: 0;
