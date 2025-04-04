@@ -178,7 +178,7 @@ body {
 
 
 /* Our Result CSS  */
-/* .video-container {
+.video-container {
     max-width: 75%;
     margin: auto;
     border: 8px solid #333;
@@ -196,26 +196,31 @@ body {
     .video-container {
         max-width: 100%
     }
-} */
+}
 
 .video-container-yt {
-    position: relative;
-    width: 100%;
-    max-width: 600px; /* Optional: Limit max width on larger screens */
-    margin: 0 auto; /* Center horizontally */
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
-  }
+    width: 608px;
+    height: 342px;
+    margin: 0 auto;
+}
 
-  .video-container-yt iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-  }
+@media (max-width: 600px) {
+    .video-container-yt {
+        width: 400px;
+        height: 215px;
+    }
+}
+
+@media (max-width: 300px) {
+    .video-container-yt {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+    }
+}
+
 
 .slider-wrapper {
     width: 90%;
